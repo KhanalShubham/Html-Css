@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softwarica Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        img {
+            width: 140px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .Username {
+            font-weight: bold;
+        }
+
+        .login-form {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .login-form input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: calc(100% - 16px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Softwarica</h1>
+    </header>
+
+    <div class="container">
+        <img src="Images/6dae9135-0a7e-4a6c-92a2-9d59a74f4e4b_4160x3120.jpg" alt="An image of Shubham">
+        <p class="Username">@Shubham</p>
+        <div class="login-form">
+            <input type="text" placeholder="Username"><br>
+            <input type="password" placeholder="Password"><br>
+            <button>Login</button>
+            <button>Sign up</button>
+            <button class="Forget">Forgot Password</button>
+            <div class="main-right">
+                <form method="POST" action="http://localhost:8080">
+                    <div>
+                        <label for="Username">Username</label>
+                        <input type="text" name="username" id="Username"/>
+                    </div>
+                    <div>
+                        <label for="password" >Password</label>
+                        <input type="password" name="password" id="password"/>
+                    </div>
+                    <div>
+                        <input type="submit" name="save">
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Softwarica College of IT</p>
+    </footer>
+</body>
+
+</html>

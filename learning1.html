@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <h1>Registration</h1>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div>
+        <p>Full Name</p>
+        <input type="text" name="name" id="Name" placeholder="Enter your name">
+        <p>Username</p>
+        <input type="text" name="username" id="Username" placeholder="Your Username">
+        <p>Email</p>
+        <input type="text" name="email" id="Email" placeholder="Your Email">
+        <p>PhoneNumber</p>
+        <input type="text" name="phoNo" id="PhoneNumber" placeholder="Your PhoneNumber">
+        <p>Password</p>
+        <input type="text" name="password" id="Password" placeholder="Your Password">
+        <p>Confirm Password</p>
+        <input type="text" name="Confirm" id="Confirm Password" placeholder="Confirm Password">
+        <div>
+            <div class="main-right">
+                <form method="POST" action="http://localhost:8080">
+                    <br>
+                    <label for="">Gender</label>
+                    <br>
+                    Male<input type="radio">
+                    Female<input type="radio">
+                    Prefer Not to Say<input type="radio">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Overall Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr > 
+                                <td rowspan="2">230007</td>
+                                <td>People</td>
+                                <td>Kausaltar</td>
+                                <td rowspan="3">Data for all</td>
+                            </tr>
+                            <tr>
+                                <td>Manxhe</td>
+                                <td>Nepal</td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    People together
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <div>
+                        <button>Register</button>
+                    </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
