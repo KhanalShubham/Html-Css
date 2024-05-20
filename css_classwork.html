@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task</title>
+    <style>
+        ,main{
+            position: relative;
+        }
+
+        .main .left_container {
+            float: left;
+            background-color: yellow;
+            height: 700px;
+            width: 300px;
+        }
+
+        .main > .right_container {
+            float: right;
+            display: inline-block;
+            background-color: red;
+            height: 400px;
+            width: 300px;
+            order: 1;
+        }
+
+        /* Child selector */
+        .main > .right_container .middle1 {
+            right: auto;
+            float: left;
+            background-color: rgb(0, 255, 64);
+            height: 100px;
+            width: 150px;
+            order: 2;
+        }
+
+        /* Adjacent sibling selector */
+        .main > .right_container .middle1 + .middle2 {
+            background-color: rgb(115, 0, 255);
+            height: 100px;
+            width: 300px;
+        }
+
+        /* General sibling selector */
+        .main > .right_container .middle1 ~ .middle2 {
+            margin-top: 10px;
+        }
+
+        .main > .right_container .middle2 + .last {
+            background-color: black;
+            height: 100px;
+            width: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left_container">
+            <p>Why</p>
+        </div>
+        <div class="right_container">
+            <p>What</p>
+            <div class="middle1">
+                <p>Hello World !</p>
+            </div>
+            <div class="middle2">
+                <p>Something new message</p>
+            </div>
+            <div class="last">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

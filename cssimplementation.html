@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Implementation</title>
+        <!-- <link href="style.css" rel="stylesheet" /> -->
+        <style>
+        
+        
+        ul li:first-child + li ~ li{
+                color:green;
+            }
+          
+            .main > p{
+                color:Red
+            }
+
+            .main > .img-section > input[type="text"] {
+                background-color: red;
+            }
+
+
+        
+        </style>
+    </head>
+    <body>
+       
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li>fourth</li>
+        </ul>
+        <div class="main">
+            <p>me</p>
+            <div class="img-section">
+                <img src="Images/message.png" />
+                <p id="para">pagrapgr 2</p>
+                <input type="text" />
+                <input type="password" />
+
+            </div>
+            <div class="info-section">
+                <h1>heading</h1>
+                <p>paragraph</p>
+            </div>
+        </div>
+    </body>
+</html>
