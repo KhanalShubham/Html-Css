@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Board</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .main {
+            position: relative;
+            height: 600px; 
+            width: 600px;  
+            background-color: #f0d9b5; 
+        }
+        .pocket {
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-radius: 60%; 
+        }
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: red;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: yellow;
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: blue;
+        }
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pocket top-right"></div>
+        <div class="pocket top-left"></div>
+        <div class="pocket bottom-right"></div>
+        <div class="pocket bottom-left"></div>
+    </div>
+</body>
+</html>
